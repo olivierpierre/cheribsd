@@ -76,7 +76,7 @@ crt_init_globals(void)
 
 #ifndef POSITION_INDEPENDENT_STARTUP
 /* This is __always_inline since it is called before globals have been set up */
-static __always_inline void
+static __always_inline __attribute__((unused)) void
 do_crt_init_globals(const Elf_Phdr *phdr, long phnum)
 {
 	const Elf_Phdr *phlimit = phdr + phnum;

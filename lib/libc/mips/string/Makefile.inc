@@ -18,7 +18,8 @@ MDSRCS+= \
 CHERI_MDSRCS=	\
 		memcpy_c.c \
 		memmove_c.c \
-		memset_c.c
+		memset_c.c \
+		memcpy_c_tofrom.c
 CHERI_MISRCS=	\
 		bcopy.c \
 		memcpy.c \

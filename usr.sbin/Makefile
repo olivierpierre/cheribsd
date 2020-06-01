@@ -90,7 +90,6 @@ SUBDIR=	adduser \
 	syslogd \
 	sysrc \
 	tcpdrop \
-	tcpdump \
 	traceroute \
 	trim \
 	trpt \
@@ -104,6 +103,9 @@ SUBDIR=	adduser \
 	watchdogd \
 	zic \
 	zonectl
+
+# Pierre: removed from the list above
+# tcpdump \
 
 # NB: keep these sorted by MK_* knobs
 

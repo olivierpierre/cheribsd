@@ -75,7 +75,7 @@ void * __getCurrentRuneLocale(void);
 
 static int	stub_errno;
 
-char *	__progname;
+//char *	__progname;
 
 #define	EOF	(-1)
 

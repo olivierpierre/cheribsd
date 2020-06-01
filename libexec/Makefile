@@ -51,7 +51,7 @@ SUBDIR+=	rtld-cheri-elf rtld-cheri-elf-debug
 
 SUBDIR.${MK_LIBCHERI}+=	cheri_bench-helper
 SUBDIR.${MK_LIBCHERI}+=	cheritest-helper
-SUBDIR.${MK_LIBCHERI}+=	tcpdump-helper
+#SUBDIR.${MK_LIBCHERI}+=	tcpdump-helper
 
 .if ${MK_FINGER} != "no"
 SUBDIR+=	fingerd

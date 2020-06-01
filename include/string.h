@@ -145,6 +145,12 @@ void * __capability
 	    const void * __capability __restrict, size_t);
 void * __capability
 	memset_c(void * __capability, int, size_t);
+
+void	*memcpy_c_fromcap(void * __restrict,
+	    const void * __capability __restrict, size_t);
+void * __capability
+	 memcpy_c_tocap(void * __capability __restrict,
+	    const void * __restrict, size_t);
 #endif
 
 int	 timingsafe_bcmp(const void *, const void *, size_t);

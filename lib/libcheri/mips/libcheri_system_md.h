@@ -31,6 +31,11 @@
 #ifndef _LIBCHERI_SYSTEM_MD_H_
 #define	_LIBCHERI_SYSTEM_MD_H_
 
+#define	_CHERI_INTERNAL
+#define	zero	$zero
+#include <machine/cheriasm.h>
+#undef _CHERI_INTERNAL
+
 /*
  * CHERI system class CCall landing pad code: catches CCalls inbound from
  * sandboxes seeking system services, and bootstraps C code.  A number of
