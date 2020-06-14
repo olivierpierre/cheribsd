@@ -255,7 +255,9 @@ sandbox_map_optimize(struct sandbox_map *sm)
 	 * script bugs.
 	 */
 	STAILQ_FOREACH(sme, &sm->sm_head, sme_entries) {
-		if (sme->sme_map_offset < sm->sm_minoffset) {
+
+		//if (sme->sme_map_offset < sm->sm_minoffset) {
+		if (sme->sme_map_offset && sme->sme_map_offset < sm->sm_minoffset) {
 			delta = sm->sm_minoffset - sme->sme_map_offset;
 			loader_dbg("shifting map up by 0x%zx from 0x%zx\n",
 			    delta, sme->sme_map_offset);
